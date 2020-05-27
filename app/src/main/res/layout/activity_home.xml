@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackcolor"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/blackcolor"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <ImageView
+            android:id="@+id/compteicon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user"
+            android:onClick="gotoaccount" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/money2" />
+
+        <ImageView
+            android:id="@+id/Exiticon"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="10dp"
+            android:onClick="goBack"
+            android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/depenseView"
+        android:layout_width="wrap_content"
+        android:layout_height="410dp"
+        android:background="@drawable/decouvrironglet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="16dp"
+        android:text="Voir plus"
+        android:onClick="gotodecouvrir"
+        android:textAlignment="center"
+        android:textColor="@color/blackcolor"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/depenseView"
+        app:layout_constraintTop_toTopOf="@+id/depenseView" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/espaceonglet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/depensesonglet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="102dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:text="Découvrir"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/depenseView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Mes espaces"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="279dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/rubik"
+        android:text="Des espaces pour vous aider à\néconomiser et atteindre vos objectifs"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/depenseView"
+        app:layout_constraintTop_toTopOf="@+id/depenseView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="57dp"
+        android:text="1233 € de disponible"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="12dp"
+        android:text="Voir plus"
+        android:onClick="gotoespace"
+        android:textAlignment="center"
+        android:textColor="@color/blackcolor"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="236dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="21dp"
+        android:text="Mes dernières dépenses"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="10dp"
+        android:text="Voir plus"
+        android:onClick="gotodepense"
+        android:textColor="@color/blackcolor"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/mastercard" />
+
+
+</android.support.constraint.ConstraintLayout>
